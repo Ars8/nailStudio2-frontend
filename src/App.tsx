@@ -1,11 +1,18 @@
-import React, {FC} from 'react';
+import React, { FC } from "react";
+import { Layout } from "antd";
+import AppRouter from "./components/AppRouter";
+import NavBar from "./components/NavBar";
+import "./App.css";
 
-const App:FC = () => {
-  return (
-    <div>
-      Nail
-    </div>
-  );
+const App: FC = () => {
+	return (
+		<Layout>
+			<NavBar />
+			<Layout.Content>
+				<AppRouter />
+			</Layout.Content>
+		</Layout>
+	);
 };
 
 export default App;
