@@ -3,18 +3,20 @@ import { Layout, Row, Menu } from "antd";
 import { useHistory } from "react-router";
 import { RouteNames } from "../router";
 import { useTypedSelector } from "../hooks/useTypedSelector";
+import { useActions } from "../hooks/useActions";
 
 const NavBar: FC = () => {
 	const router = useHistory();
-	const {isAuth} = useTypedSelector(state => state.authReducer)
+	const {isAuth, user} = useTypedSelector(state => state.authReducer);
+	const {logout} = useActions();
 	return (
 		<Layout.Header>
 			<Row justify="end">
 				{isAuth ? (
 					<>
-						<div style={{ color: "white" }}>Name</div>
+						<div style={{ color: "white" }}>{user.username}</div>
 						<Menu theme="dark" mode="horizontal" selectable={false}>
-							<Menu.Item onClick={() => console.log("")} key={1}>
+							<Menu.Item onClick={logout} key={1}>
 								Logout
 							</Menu.Item>
 						</Menu>
