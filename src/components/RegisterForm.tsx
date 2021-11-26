@@ -1,28 +1,17 @@
 import React, { FC } from "react";
-import { useDispatch } from "react-redux";
 import { Form, Input, Button } from "antd";
 import { rules } from "../utils/rules";
+import { LoginModalProps } from "./LoginForm";
 
-export interface LoginModalProps {
-	open: boolean;
-	onClose: () => void;
-}
+const RegisterForm: FC<LoginModalProps> = () => {
 
-export interface LoginFormProps {
-	email: string;
-	password: string;
-}
-
-const LoginForm: FC<LoginModalProps> = () => {
-	const dispatch = useDispatch();
-
-  const onSubmit = async (data: LoginFormProps) => {
-    dispatch(fetchLogIn(data))
+  const submit = () => {
+    console.log('submit')
   }
   
 	return (
 		<Form
-      onFinish={onSubmit}
+      onFinish={submit}
     >
 			<Form.Item
 				label="Username"
@@ -47,4 +36,4 @@ const LoginForm: FC<LoginModalProps> = () => {
 	);
 };
 
-export default LoginForm;
+export default RegisterForm;
