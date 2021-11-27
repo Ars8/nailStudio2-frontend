@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { useDispatch } from "react-redux";
 import { Form, Input, Button } from "antd";
 import { rules } from "../utils/rules";
+import { fetchLogIn } from "../store/ducks/user/actionCreators";
 
 export interface LoginModalProps {
 	open: boolean;
