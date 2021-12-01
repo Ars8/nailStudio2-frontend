@@ -29,6 +29,10 @@ export const AuthApi = {
     });
     return data;
   },
+  async getMe(): Promise<ResponseApi> {
+    const { data } = await axios.get<ResponseApi>('/users/me');
+    return data;
+  },
 };
 
 // @ts-ignore

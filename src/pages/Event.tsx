@@ -6,11 +6,13 @@ import {useActions} from "../hooks/useActions";
 import {useSelector} from "react-redux";
 import {useTypedSelector} from "../hooks/useTypedSelector";
 import {IEvent} from "../models/IEvent";
+import { selectUsersItems } from '../store/ducks/users/selectors';
 
 const Event: FC = () => {
     const [modalVisible, setModalVisible] = useState(false);
     const {fetchGuests, createEvent, fetchEvents} = useActions();
-    const {guests,events} = useTypedSelector(state => state.event);
+    const masters = useSelector(selectUsersItems);
+    /* const {guests,events} = useTypedSelector(state => state.event); */
     const {user} = useTypedSelector(state => state.auth);
 
     useEffect(() => {
@@ -40,7 +42,7 @@ const Event: FC = () => {
                 onCancel={() => setModalVisible(false)}
             >
                 <EventForm
-                    guests={guests}
+                    masters={masters}
                     submit={addNewEvent}
                 />
             </Modal>

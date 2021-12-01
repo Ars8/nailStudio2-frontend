@@ -1,22 +1,28 @@
 import React, { FC } from "react";
+import { useDispatch, useSelector } from 'react-redux';
 import { Layout, Row, Menu } from "antd";
 import { useHistory } from "react-router";
+import { selectIsAuth, selectUserData } from '../store/ducks/user/selectors';
 import { RouteNames } from "../router";
-import { useTypedSelector } from "../hooks/useTypedSelector";
-import { useActions } from "../hooks/useActions";
+import { signOut } from "../store/ducks/user/actionCreators";
 
 const NavBar: FC = () => {
+	const dispatch = useDispatch();
 	const router = useHistory();
-	const {isAuth, user} = useTypedSelector(state => state.authReducer);
-	const {logout} = useActions();
+	const isAuth = useSelector(selectIsAuth);
+	const userData = useSelector(selectUserData);
+	const handleSignOut = () => {
+    window.localStorage.removeItem('token');
+    dispatch(signOut());
+  };
 	return (
 		<Layout.Header>
 			<Row justify="end">
 				{isAuth ? (
 					<>
-						<div style={{ color: "white" }}>{user.username}</div>
+						<div style={{ color: "white" }}>{userData ? userData.username : null}</div>
 						<Menu theme="dark" mode="horizontal" selectable={false}>
-							<Menu.Item onClick={logout} key={1}>
+							<Menu.Item onClick={handleSignOut} key={1}>
 								Logout
 							</Menu.Item>
 						</Menu>

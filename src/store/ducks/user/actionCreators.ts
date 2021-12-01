@@ -16,9 +16,17 @@ export const setUserData = (payload: UserState['data']): SetUserDataActionInterf
   payload,
 });
 
+export const signOut = (): SignOutActionInterface => ({
+  type: UserActionsType.SIGN_OUT,
+});
+
 export const fetchLogIn = (payload: LoginFormProps): FetchLogInActionInterface => ({
   type: UserActionsType.FETCH_LOG_IN,
   payload,
+});
+
+export const fetchUserData = (): FetchUserDataActionInterface => ({
+  type: UserActionsType.FETCH_USER_DATA,
 });
 
 export const fetchSignUp = (payload: RegisterFormProps): FetchSignUpActionInterface => ({

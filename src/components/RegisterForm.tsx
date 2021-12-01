@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { Form, Input, Button } from "antd";
 import { rules } from "../utils/rules";
 import { LoginModalProps } from "./LoginForm";
+import { fetchSignUp } from "../store/ducks/user/actionCreators";
 
 export interface RegisterFormProps {
   fullname: string;

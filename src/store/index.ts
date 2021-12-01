@@ -1,15 +1,27 @@
-import { applyMiddleware, combineReducers, createStore } from 'redux';
-import createSagaMiddleware from '@redux-saga/core';
-import rootSaga from './saga';
-import reducers from './reducers';
+import { applyMiddleware, compose, createStore } from 'redux';
+import createSagaMiddleware from 'redux-saga';
+import { UserState } from './ducks/user/contracts/state';
+import { UsersState } from './ducks/users/contracts/state';
 
-const rootReducer = combineReducers(reducers)
+import { rootReducer } from './rootReducer';
+import rootSaga from './saga';
+
+declare global {
+  interface Window {
+    __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
+  }
+}
+
+const composeEnhancers =
+  (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 
 const sagaMiddleware = createSagaMiddleware();
 
-export const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
+export interface RootState {
+  user: UserState;
+  users: UsersState;
+}
+
+export const store = createStore(rootReducer, composeEnhancers(applyMiddleware(sagaMiddleware)));
 
 sagaMiddleware.run(rootSaga);
-
-export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch;

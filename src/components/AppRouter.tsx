@@ -1,10 +1,11 @@
 import React from "react";
+import { useSelector } from 'react-redux';
 import {Switch, Route, Redirect} from "react-router-dom";
-import { useTypedSelector } from "../hooks/useTypedSelector";
+import { selectIsAuth } from '../store/ducks/user/selectors';
 import { privateRoutes, publicRoutes, RouteNames } from "../router";
 
 const AppRouter = () => {
-  const {isAuth} = useTypedSelector(state => state.authReducer)
+  const isAuth = useSelector(selectIsAuth);
   return (
     isAuth
       ?

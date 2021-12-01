@@ -5,10 +5,9 @@ import {IUser} from "../models/IUser";
 import {IEvent} from "../models/IEvent";
 import {Moment} from "moment";
 import {formatDate} from "../utils/date";
-import {useTypedSelector} from "../hooks/useTypedSelector";
 
 interface EventFormProps {
-    guests: IUser[],
+    masters: IUser[],
     submit: (event: IEvent) => void
 }
 
@@ -19,7 +18,7 @@ const EventForm: FC<EventFormProps> = (props) => {
         description: '',
         guest: ''
     } as IEvent);
-    const {user} = useTypedSelector(state => state.auth)
+    
 
     const selectDate = (date: Moment | null) => {
         if (date) {
@@ -28,7 +27,7 @@ const EventForm: FC<EventFormProps> = (props) => {
     }
 
     const submitForm = () => {
-        props.submit({...event, author: user.username})
+        props.submit({...event, author: 'username'})
     }
 
     return (
@@ -58,9 +57,9 @@ const EventForm: FC<EventFormProps> = (props) => {
                 rules={[rules.required()]}
             >
                 <Select onChange={(guest: string) => setEvent({...event, guest})}>
-                    {props.guests.map(guest =>
-                        <Select.Option key={guest.username} value={guest.username}>
-                            {guest.username}
+                    {props.masters.map(master =>
+                        <Select.Option key={master.username} value={master.username}>
+                            {master.username}
                         </Select.Option>
                     )}
                 </Select>
