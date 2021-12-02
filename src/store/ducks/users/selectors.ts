@@ -1,4 +1,4 @@
-import { RootState } from '../../index';
+import { RootState } from '../../store';
 import { UsersState } from './contracts/state';
 
 export const selectUsers = (state: RootState): UsersState => state.users;

@@ -1,5 +1,6 @@
 import { applyMiddleware, compose, createStore } from 'redux';
 import createSagaMiddleware from 'redux-saga';
+import { TweetsState } from './ducks/events/contracts/state';
 import { UserState } from './ducks/user/contracts/state';
 import { UsersState } from './ducks/users/contracts/state';
 
@@ -20,6 +21,7 @@ const sagaMiddleware = createSagaMiddleware();
 export interface RootState {
   user: UserState;
   users: UsersState;
+  events: TweetsState;
 }
 
 export const store = createStore(rootReducer, composeEnhancers(applyMiddleware(sagaMiddleware)));

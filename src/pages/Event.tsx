@@ -2,18 +2,16 @@ import React, {FC, useEffect, useState} from 'react';
 import {Button, Layout, Modal, Row} from "antd";
 import EventCalendar from "../components/EventCalendar";
 import EventForm from "../components/EventForm";
-import {useActions} from "../hooks/useActions";
-import {useSelector} from "react-redux";
-import {useTypedSelector} from "../hooks/useTypedSelector";
+import { useDispatch, useSelector } from "react-redux";
 import {IEvent} from "../models/IEvent";
 import { selectUsersItems } from '../store/ducks/users/selectors';
+import { fetchAddTweet } from '../store/ducks/events/actionCreators';
 
 const Event: FC = () => {
+    const dispatch = useDispatch();
     const [modalVisible, setModalVisible] = useState(false);
     const {fetchGuests, createEvent, fetchEvents} = useActions();
     const masters = useSelector(selectUsersItems);
-    /* const {guests,events} = useTypedSelector(state => state.event); */
-    const {user} = useTypedSelector(state => state.auth);
 
     useEffect(() => {
         fetchGuests()
@@ -22,7 +20,7 @@ const Event: FC = () => {
 
     const addNewEvent = (event: IEvent) => {
         setModalVisible(false);
-        createEvent(event);
+        dispatch(fetchAddTweet(event));
     }
 
     return (

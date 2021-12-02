@@ -1,4 +1,4 @@
-import { RootState } from '../../index';
+import { RootState } from '../../store';
 import { LoadingStatus } from '../../types';
 import { UserState } from './contracts/state';
 
