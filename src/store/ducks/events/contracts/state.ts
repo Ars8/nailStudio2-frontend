@@ -1,5 +1,4 @@
 import { LoadingStatus } from '../../../types';
-import { User } from '../../user/contracts/state';
 
 export enum AddFormState {
   LOADING = 'LOADING',
@@ -9,10 +8,10 @@ export enum AddFormState {
 
 export interface Tweet {
   _id: string;
-  text: string;
-  images?: [];
-  createdAt: string;
-  user: User;
+  author: string;
+  guest: string;
+  date: string;
+  description: string;
 }
 
 export interface TweetsState {

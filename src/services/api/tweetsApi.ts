@@ -7,7 +7,7 @@ interface Response<T> {
 }
 
 export const TweetsApi = {
-  async addTweet(payload: { text: string; images: string[] }): Promise<Tweet> {
+  async addTweet(payload: { author: string; guest: string; date: string; description: string }): Promise<Tweet> {
     const { data } = await axios.post<Response<Tweet>>('/tweets', payload);
     return data.data;
   },
