@@ -8,6 +8,7 @@ import { selectUsersItems } from '../store/ducks/users/selectors';
 import { fetchAddTweet, setAddFormState } from '../store/ducks/events/actionCreators';
 import { AddFormState } from '../store/ducks/events/contracts/state';
 import { selectTweetsItems } from '../store/ducks/events/selectors';
+import { fetchUserData } from '../store/ducks/user/actionCreators';
 
 const Event: FC = () => {
     const dispatch = useDispatch();
@@ -20,6 +21,10 @@ const Event: FC = () => {
         dispatch(setAddFormState(AddFormState.LOADING))
         dispatch(fetchAddTweet(event));
     }
+
+    React.useEffect(() => {
+        dispatch(fetchUserData());
+      }, [dispatch]);
 
     return (
         <Layout>
