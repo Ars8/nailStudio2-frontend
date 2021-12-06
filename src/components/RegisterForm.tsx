@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import { useDispatch } from 'react-redux';
 import { Form, Input, Button } from "antd";
 import { rules } from "../utils/rules";
-import { LoginModalProps } from "./LoginForm";
 import { fetchSignUp } from "../store/ducks/user/actionCreators";
 
 export interface RegisterFormProps {
@@ -13,10 +12,11 @@ export interface RegisterFormProps {
   password2: string;
 }
 
-const RegisterForm: FC<LoginModalProps> = () => {
+const RegisterForm: FC = () => {
 	const dispatch = useDispatch()
 
   const onSubmit = async (data: RegisterFormProps) => {
+		console.log('Registry')
     dispatch(fetchSignUp(data));
   };
   
@@ -59,7 +59,7 @@ const RegisterForm: FC<LoginModalProps> = () => {
 			>
 				<Input />
 			</Form.Item>
-      <Form.Item>
+			<Form.Item wrapperCol={{ offset: 8, span: 16 }}>
         <Button type="primary" htmlType="submit">
           Submit
         </Button>

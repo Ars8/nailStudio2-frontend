@@ -4,20 +4,16 @@ import { Form, Input, Button } from "antd";
 import { rules } from "../utils/rules";
 import { fetchLogIn } from "../store/ducks/user/actionCreators";
 
-export interface LoginModalProps {
-	open: boolean;
-	onClose: () => void;
-}
-
 export interface LoginFormProps {
 	email: string;
 	password: string;
 }
 
-const LoginForm: FC<LoginModalProps> = () => {
+const LoginForm: FC = () => {
 	const dispatch = useDispatch();
 
   const onSubmit = async (data: LoginFormProps) => {
+		console.log('logins')
     dispatch(fetchLogIn(data))
   }
   
@@ -39,11 +35,6 @@ const LoginForm: FC<LoginModalProps> = () => {
 			>
 				<Input />
 			</Form.Item>
-      <Form.Item>
-        <Button type="primary" htmlType="submit">
-          Submit
-        </Button>
-      </Form.Item>
 		</Form>
 	);
 };
