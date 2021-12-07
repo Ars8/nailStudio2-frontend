@@ -13,7 +13,7 @@ const LoginForm: FC = () => {
 	const dispatch = useDispatch();
 
   const onSubmit = async (data: LoginFormProps) => {
-		console.log('logins')
+		console.log(data)
     dispatch(fetchLogIn(data))
   }
   
@@ -35,6 +35,11 @@ const LoginForm: FC = () => {
 			>
 				<Input />
 			</Form.Item>
+			<Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+        <Button type="primary" htmlType="submit">
+          Submit
+        </Button>
+      </Form.Item>
 		</Form>
 	);
 };
