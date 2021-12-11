@@ -5,9 +5,9 @@ import { rules } from "../utils/rules";
 import { fetchSignUp } from "../store/ducks/user/actionCreators";
 
 export interface RegisterFormProps {
+	email: string;
   fullname: string;
-  username: string;
-  email: string;
+  username: string;  
   password: string;
   password2: string;
 }

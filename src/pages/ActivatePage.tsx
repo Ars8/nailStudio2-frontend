@@ -20,7 +20,7 @@ const ActivatePage = () => {
           dispatch(setUserLoadingStatus(LoadingStatus.LOADED));
         });
     }
-  }, []);
+  }, [dispatch]);
 
   return null;
 };

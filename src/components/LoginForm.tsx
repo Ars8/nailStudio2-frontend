@@ -5,7 +5,7 @@ import { rules } from "../utils/rules";
 import { fetchLogIn } from "../store/ducks/user/actionCreators";
 
 export interface LoginFormProps {
-	email: string;
+	username: string;
 	password: string;
 }
 

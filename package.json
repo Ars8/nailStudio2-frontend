@@ -27,6 +27,7 @@
     "typescript": "^4.5.2",
     "web-vitals": "^1.0.1"
   },
+  "proxy": "http://localhost:8888",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -50,5 +51,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Ars8/nailStudio2-frontend.git",
+  "author": "Ars8 <pogosov-91@mail.ru>",
+  "license": "MIT"
 }
