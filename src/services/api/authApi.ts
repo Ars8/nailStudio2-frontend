@@ -14,7 +14,7 @@ export const AuthApi = {
   },
   async logIn(postData: LoginFormProps): Promise<ResponseApi> {
     const { data } = await axios.post<ResponseApi>('/auth/login', {
-      username: postData.username,
+      username: postData.email,
       password: postData.password,
     });
     return data;
@@ -22,8 +22,8 @@ export const AuthApi = {
   async signUp(postData: RegisterFormProps): Promise<ResponseApi> {
     const { data } = await axios.post<ResponseApi>('/auth/register', {
       email: postData.email,
+      username: postData.username,
       fullname: postData.fullname,
-      username: postData.username,      
       password: postData.password,
       password2: postData.password2,
     });

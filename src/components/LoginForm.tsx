@@ -5,15 +5,14 @@ import { rules } from "../utils/rules";
 import { fetchLogIn } from "../store/ducks/user/actionCreators";
 
 export interface LoginFormProps {
-	username: string;
-	password: string;
+	email: string;
+  password: string;
 }
 
 const LoginForm: FC = () => {
 	const dispatch = useDispatch();
 
   const onSubmit = async (data: LoginFormProps) => {
-		console.log(data)
     dispatch(fetchLogIn(data))
   }
   

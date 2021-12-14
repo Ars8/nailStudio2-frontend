@@ -1,10 +1,10 @@
-import React, { FC, useState } from "react";
+import React from "react";
 import { Layout, Row, Button, Card, Space } from "antd";
 import LoginForm from "../components/LoginForm";
 import RegisterForm from "../components/RegisterForm";
 
-const Login: FC = () => {
-	const [visibleModal, setVisibleModal] = useState<"logIn" | "signUp">();
+const Login: React.FC = () => {
+	const [visibleModal, setVisibleModal] = React.useState<"logIn" | "signUp">();
 
 	const handleClickOpenLogIn = (): void => {
 		setVisibleModal("logIn");
@@ -45,7 +45,6 @@ const Login: FC = () => {
 								<RegisterForm />
 							</Card>
 						</Space>
-							
 					}
 			</Row>
 		</Layout>
