@@ -23,32 +23,24 @@ const App:FC = () => {
   }, [dispatch]);
 
   React.useEffect(() => {
-    if (!isAuth && isReady) {
+    if (history.location.pathname === '/') {
       history.push('/event');
-    } else if (history.location.pathname === '/signin') {
-      history.push('/signin');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuth, isReady]);
 
-  if (!isReady) {
     return (
-      <div>
-        Loading...
-      </div>
-    );
-  }
-
-    return (
-      <Switch>
-        <Route path="/signin" component={Login} exact />
-        <Layout>
-            <Navbar/>
-            <Layout.Content>
-              <Route path="/event" component={Event} />
-              <Route path="/user/activate/:hash" component={ActivatePage} exact />
-            </Layout.Content>
-        </Layout>
+      <Switch> 
+        <>
+          <Layout>        
+              <Navbar/>
+              <Route path="/signin" component={Login} exact />
+              <Layout.Content>
+                <Route path="/event" component={Event} />
+                <Route path="/user/activate/:hash" component={ActivatePage} exact />
+              </Layout.Content>
+          </Layout>
+        </>        
       </Switch>
         
     );

@@ -21,9 +21,9 @@ const LoginForm: FC = () => {
       onFinish={onSubmit}
     >
 			<Form.Item
-				label="Username"
-				name="username"
-				rules={[rules.required("Please input your username!")]}
+				label="email"
+				name="email"
+				rules={[rules.required("Please input your email!")]}
 			>
 				<Input />
 			</Form.Item>
