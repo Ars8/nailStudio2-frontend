@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { Form, Input, Button } from "antd";
 import { rules } from "../utils/rules";
 import { fetchLogIn } from "../store/ducks/user/actionCreators";
+import { useHistory } from "react-router-dom";
 
 export interface LoginFormProps {
 	email: string;
@@ -10,29 +11,31 @@ export interface LoginFormProps {
 }
 
 const LoginForm: FC = () => {
+	const [form] = Form.useForm();
 	const dispatch = useDispatch();
+	const history = useHistory();
 
-  const onSubmit = async (data: LoginFormProps) => {
-    dispatch(fetchLogIn(data))
+  const onSubmit = async (data: LoginFormProps) => {		
+    dispatch(fetchLogIn(data));
+		form.resetFields();
+		history.push('/event')
   }
   
 	return (
-		<Form
-      onFinish={onSubmit}
-    >
+		<Form form={form} onFinish={onSubmit} >
 			<Form.Item
-				label="email"
+				label="Email"
 				name="email"
 				rules={[rules.required("Please input your email!")]}
 			>
-				<Input />
+				<Input allowClear={true} />
 			</Form.Item>
       <Form.Item
 				label="Password"
 				name="password"
 				rules={[rules.required("Please input your password!")]}
 			>
-				<Input />
+				<Input type={"password"} allowClear={true} />
 			</Form.Item>
 			<Form.Item wrapperCol={{ offset: 8, span: 16 }}>
         <Button type="primary" htmlType="submit">
