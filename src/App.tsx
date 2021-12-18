@@ -10,6 +10,7 @@ import ActivatePage from "./pages/ActivatePage";
 import './App.css';
 import Login from './pages/Login';
 import Event from './pages/Event';
+import NailsMasters from './components/NailsMasters';
 
 const App:FC = () => {
   const history = useHistory();
@@ -37,6 +38,7 @@ const App:FC = () => {
               <Route path="/signin" component={Login} exact />
               <Layout.Content>
                 <Route path="/event" component={Event} />
+                <Route path="/nailsmasters" component={NailsMasters} />
                 <Route path="/user/activate/:hash" component={ActivatePage} exact />
               </Layout.Content>
           </Layout>

@@ -1,0 +1,15 @@
+.contentStyle {
+  height: 160px;
+  color: #fff;
+  line-height: 160px;
+  text-align: center;
+  background: #364d79;
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  font-size: inherit;
+  color: red;
+}

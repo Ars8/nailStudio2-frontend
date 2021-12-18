@@ -1,6 +1,6 @@
 import React, {FC, useState} from 'react';
 import {Button, Layout, Modal, Row} from "antd";
-import EventCalendar from "../components/EventCalendar";
+import EventCalendar from "../components/EventCalendar/index";
 import EventForm from "../components/EventForm";
 import { useDispatch, useSelector } from "react-redux";
 import {IEvent} from "../models/IEvent";
