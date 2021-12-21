@@ -11,6 +11,7 @@ import './App.css';
 import Login from './pages/Login';
 import Event from './pages/Event';
 import NailsMasters from './components/NailsMasters';
+import Home from './pages/Home';
 
 const App:FC = () => {
   const history = useHistory();
@@ -25,7 +26,7 @@ const App:FC = () => {
 
   React.useEffect(() => {
     if (history.location.pathname === '/') {
-      history.push('/event');
+      history.push('/home');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuth, isReady]);
@@ -34,9 +35,10 @@ const App:FC = () => {
       <Switch> 
         <>
           <Layout>        
-              <Navbar/>
-              <Route path="/signin" component={Login} exact />
+              <Navbar/>              
               <Layout.Content>
+                <Route path="/signin" component={Login} exact />
+                <Route path="/home" component={Home} />
                 <Route path="/event" component={Event} />
                 <Route path="/nailsmasters" component={NailsMasters} />
                 <Route path="/user/activate/:hash" component={ActivatePage} exact />

@@ -38,6 +38,30 @@ const Gallary = () => {
 					/>
 				</h3>
 			</div>
+			<div>
+				<h3 className="contentStyle">
+					<img
+						alt="nailsportfolio"
+						src="https://images.unsplash.com/photo-1585731601359-b5edfffbf629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80"
+					/>
+				</h3>
+			</div>
+			<div>
+				<h3 className="contentStyle">
+					<img
+						alt="nailsportfolio"
+						src="https://images.unsplash.com/photo-1585731601359-b5edfffbf629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80"
+					/>
+				</h3>
+			</div>
+			<div>
+				<h3 className="contentStyle">
+					<img
+						alt="nailsportfolio"
+						src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80"
+					/>
+				</h3>
+			</div>
 		</Carousel>
 	);
 };
