@@ -1,14 +1,21 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { selectIsTweetsLoading, selectTweetsItems } from "../../store/ducks/events/selectors";
+import { fetchTweets } from "../../store/ducks/events/actionCreators";
 import NailMaster from "../NailMaster";
 
 import "./NailsMasters.css";
 
-const masters = useSelector(selectTweetsItems);
-const IsLoading = useSelector(selectIsTweetsLoading);
-
 const NailsMasters: React.FC = () => {
+	const dispatch = useDispatch();
+	const masters = useSelector(selectTweetsItems);
+	const IsLoading = useSelector(selectIsTweetsLoading);
+
+	React.useEffect(() => {
+		dispatch(fetchTweets());
+	}, [dispatch]);
+	
+
 	return (
 		<div className="container">
 			<div className="content__items">
