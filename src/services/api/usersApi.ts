@@ -1,13 +1,14 @@
 import { axios } from '../../core/axios';
+import { User } from '../../store/ducks/user/contracts/state';
 
-interface ResponseApi {
+interface Response<T> {
   status: string;
-  data: any;
+  data: T;
 }
 
 export const UsersApi = {
-  async getUsers(): Promise<ResponseApi> {
-    const { data } = await axios.get<ResponseApi>('/users/index');
-    return data;
+  async fetchUsers(): Promise<User[]> {
+    const { data } = await axios.get<Response<User[]>>('/masters');
+    return data.data;
   },
 };

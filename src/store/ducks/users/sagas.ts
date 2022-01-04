@@ -1,19 +1,18 @@
-import { call, put, takeLatest } from 'redux-saga/effects';
-import { UsersApi } from '../../../services/api/usersApi';
-import { LoadingStatus } from '../../types';
-import { setUserLoadingStatus } from '../user/actionCreators';
-import { setUsers, UsersActionsType } from './actionCreators';
+import { call, put, takeLatest } from "redux-saga/effects";
+import { UsersApi } from "../../../services/api/usersApi";
+import { LoadingStatus } from "../../types";
+import { setUsers, setUsersLoadingStatus } from "./actionCreators";
+import { UsersActionType } from "./contracts/actionTypes";
 
-export function* fetchUsersRequest() {
+export function* fetchUsersRequest(): Generator {
   try {
-    yield put(setUserLoadingStatus(LoadingStatus.LOADING));
-    const { data } = yield call(UsersApi.getUsers);
-    yield put(setUsers(data));
+    const items: any = yield call(UsersApi.fetchUsers);
+    yield put(setUsers(items));
   } catch (error) {
-    yield put(setUserLoadingStatus(LoadingStatus.ERROR));
+    yield put(setUsersLoadingStatus(LoadingStatus.ERROR));
   }
 }
 
 export function* usersSaga() {
-  yield takeLatest(UsersActionsType.FETCH_ITEMS, fetchUsersRequest);
+  yield takeLatest(UsersActionType.FETCH_USERS, fetchUsersRequest);
 }

@@ -1,33 +1,29 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectIsTweetsLoading, selectTweetsItems } from "../../store/ducks/events/selectors";
-import { fetchTweets } from "../../store/ducks/events/actionCreators";
-import NailMaster from "../NailMaster";
+import { fetchUsers } from "../../store/ducks/users/actionCreators";
+import { selectUsersItems } from "../../store/ducks/users/selectors";
 
 import "./NailsMasters.css";
 
 const NailsMasters: React.FC = () => {
 	const dispatch = useDispatch();
-	const masters = useSelector(selectTweetsItems);
-	const IsLoading = useSelector(selectIsTweetsLoading);
+	const masters = useSelector(selectUsersItems);
 
 	React.useEffect(() => {
-		dispatch(fetchTweets());
+		dispatch(fetchUsers());
 	}, [dispatch]);
+
+	console.log(masters);
 	
 
 	return (
 		<div className="container">
 			<div className="content__items">
-				{IsLoading ? (
-          <div>
-            Loading...
-          </div>
-        ) : (
-					masters.map((master) => (
-						<NailMaster key={master._id} images={master.images} {master}/>
+				{
+					masters.map(master => (
+						<h1 key={master._id}>{master.fullname}</h1>
 					))
-				)}
+				}
 			</div>
 		</div>
 	);

@@ -1,29 +1,19 @@
-import { Action } from 'redux';
-import { User } from '../user/contracts/state';
+import { LoadingStatus } from "../../types";
+import { FetchUsersActionInterface, SetUsersActionInterface, SetUsersLoadingStatusActionInterface, UsersActionType } from "./contracts/actionTypes";
+import { UsersState } from "./contracts/state";
 
-export enum UsersActionsType {
-  SET_ITEMS = 'users/SET_ITEMS',
-  FETCH_ITEMS = 'users/FETCH_ITEMS',
-}
-
-export interface SetUsersItemsActionInterface extends Action<UsersActionsType> {
-  type: UsersActionsType.SET_ITEMS;
-  payload: User[];
-}
-
-export interface FetchUsersItemsActionInterface extends Action<UsersActionsType> {
-  type: UsersActionsType.FETCH_ITEMS;
-}
-
-export const fetchUsersData = (): FetchUsersItemsActionInterface => ({
-  type: UsersActionsType.FETCH_ITEMS,
-});
-
-export const setUsers = (payload: User[]): SetUsersItemsActionInterface => ({
-  type: UsersActionsType.SET_ITEMS,
+export const setUsers = (payload: UsersState['items']): SetUsersActionInterface => ({
+  type: UsersActionType.SET_USERS,
   payload,
-});
+})
 
-export type UsersActions =
-  | SetUsersItemsActionInterface
-  | FetchUsersItemsActionInterface;
+export const fetchUsers = (): FetchUsersActionInterface => ({
+  type: UsersActionType.FETCH_USERS,
+})
+
+export const setUsersLoadingStatus = (payload: LoadingStatus): SetUsersLoadingStatusActionInterface => ({
+  type: UsersActionType.SET_LOADING_STATE,
+  payload,
+})
+
+export type UsersActions = FetchUsersActionInterface | SetUsersActionInterface | SetUsersLoadingStatusActionInterface;

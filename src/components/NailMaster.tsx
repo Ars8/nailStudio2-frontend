@@ -1,28 +1,22 @@
 import React from 'react';
 import { Card, Avatar } from "antd";
 import Gallary from "./Gallary";
-import { User } from '../store/ducks/user/contracts/state';
 import { useHistory } from 'react-router-dom';
 
 const { Meta } = Card;
 
-interface NailMasterProps {
-  _id: string;
-  images?: string[];
-  user: Pick<User, '_id' | 'fullname' | 'username'>;
-}
 
-const NailMaster: React.FC<NailMasterProps> = ({_id, user, images}) => {
+const NailMaster: React.FC = () => {
 
   const history = useHistory();
 
   const handleClickMaster = (event: React.MouseEvent<HTMLElement>): void => {
     event.preventDefault();
-    history.push(`/masters/${_id}`);
+    history.push(`/masters`);
   }
 
   return (
-    <a onClick={handleClickMaster} href={`/masters/${_id}`}>
+    <a onClick={handleClickMaster} href={`/masters`}>
       <Card style={{ width: 250, margin: "0 auto" }} cover={<Gallary />}>
 					<Meta
 						avatar={
