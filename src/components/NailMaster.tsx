@@ -7,15 +7,16 @@ const { Meta } = Card;
 
 interface NailMasterProp {
 	fullname: string,
+  id: any,
 }
 
-const NailMaster: React.FC<NailMasterProp> = ({fullname}:NailMasterProp):React.ReactElement => {
+const NailMaster: React.FC<NailMasterProp> = ({fullname, id}:NailMasterProp):React.ReactElement => {
 
   const history = useHistory();
 
   const handleClickMaster = (event: React.MouseEvent<HTMLElement>): void => {
     event.preventDefault();
-    history.push(`/event`);
+    history.push(`/masters/appointment/${id}`);
   }
 
   return (

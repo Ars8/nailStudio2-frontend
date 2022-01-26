@@ -1,11 +1,11 @@
 import React, {FC} from 'react';
 import {Calendar, Badge} from "antd";
-import {IEvent} from "../../models/IEvent";
 
 import './EventCalendar.css';
+import { Appointment } from '../../store/ducks/events/contracts/state';
 
 interface EventCalendarProps {
-    events: IEvent[];
+    events: Appointment[];
 }
 
 const EventCalendar: FC<EventCalendarProps> = (props) => {

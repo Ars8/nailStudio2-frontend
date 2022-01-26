@@ -39,7 +39,7 @@ const App:FC = () => {
               <Layout.Content>
                 <Route path="/signin" component={Login} exact />
                 <Route path="/home" component={Home} />
-                <Route path="/event" component={Event} />
+                <Route path="/masters/appointment/:id" component={Event} />
                 <Route path="/nailsmasters" component={NailsMasters} />
                 <Route path="/user/activate/:hash" component={ActivatePage} exact />
               </Layout.Content>

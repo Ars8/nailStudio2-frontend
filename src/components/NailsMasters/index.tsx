@@ -20,7 +20,7 @@ const NailsMasters: React.FC = () => {
 		<div className="container">
 			<div className="content__items">
 				{masters.map((master) => (
-						<NailMaster key={master._id} fullname={master.fullname}/>
+						<NailMaster key={master._id} fullname={master.fullname} id={master._id}/>
 				))}
 			</div>
 		</div>

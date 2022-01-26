@@ -1,21 +1,20 @@
-import { LoadingStatus } from '../../../types';
+import { LoadingStatus } from "../../../types";
+import { User } from "../../user/contracts/state";
 
 export enum AddFormState {
-  LOADING = 'LOADING',
+  LOADING ='LOADING',
   ERROR = 'ERROR',
   NEVER = 'NEVER',
 }
 
-export interface Tweet {
+export interface Appointment {
   _id: string;
-  author: string;
-  guest: string;
-  date: string;
-  description: string;
+  appointmentTime: string;
+  toMaster: User;
 }
 
-export interface TweetsState {
-  items: Tweet[];
+export interface AppointmentsState {
+  items: Appointment[];
   LoadingStatus: LoadingStatus;
   addFormState: AddFormState;
 }
