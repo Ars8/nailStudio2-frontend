@@ -14,8 +14,9 @@ const EventCalendar: FC<EventCalendarProps> = ({events}) => {
 console.log(events[1]);
 console.log(DATE.getDate());
 function getListData(value: any) {
+  console.log(value.dayOfYear())
   let listData;
-  switch (value.date()) {
+  switch (value.date() + value.month()) {
     case 24:
       listData = [
         { type: 'warning', content: events[0]?.appointmentTime },
