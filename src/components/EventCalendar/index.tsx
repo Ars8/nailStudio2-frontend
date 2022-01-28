@@ -8,32 +8,26 @@ interface EventCalendarProps {
     events: Appointment[];
 }
 
-const EventCalendar: FC<EventCalendarProps> = (props) => {
+const EventCalendar: FC<EventCalendarProps> = ({events}) => {
+  const DATE = new Date(events[1]?.appointmentDate);
 
+console.log(events[1]);
+console.log(DATE.getDate());
 function getListData(value: any) {
   let listData;
   switch (value.date()) {
-    case 25:
+    case 24:
       listData = [
-        { type: 'warning', content: 'This is warning event.' },
-        { type: 'success', content: 'This is usual event.' },
+        { type: 'warning', content: events[0]?.appointmentTime },
+        { type: 'success', content: events[1]?.appointmentTime },
+        
       ];
       break;
     case 26:
       listData = [
-        { type: 'warning', content: 'This is warning event.' },
-        { type: 'success', content: 'This is usual event.' },
-        { type: 'error', content: 'This is error event.' },
-      ];
-      break;
-    case 27:
-      listData = [
-        { type: 'warning', content: 'This is warning event' },
-        { type: 'success', content: 'This is very long usual event。。....' },
-        { type: 'error', content: 'This is error event 1.' },
-        { type: 'error', content: 'This is error event 2.' },
-        { type: 'error', content: 'This is error event 3.' },
-        { type: 'error', content: 'This is error event 4.' },
+        { type: 'warning', content: events[2]?.appointmentTime },
+        { type: 'success', content: events[3]?.appointmentTime },
+        { type: 'error', content: events[4]?.appointmentTime },
       ];
       break;
     default:
@@ -47,7 +41,7 @@ function dateCellRender(value: any) {
     <ul className="events">
       {listData.map(item => (
         <li key={item.content}>
-          <Badge status={'warning'} text={item.content} />
+          <Badge status={'success'} text={item.content} />
         </li>
       ))}
     </ul>

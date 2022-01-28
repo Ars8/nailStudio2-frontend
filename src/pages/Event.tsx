@@ -24,8 +24,6 @@ const Event: FC = () => {
         dispatch(fetchAppointment());
       }, [dispatch]);
 
-      console.log(events);
-
     return (
         <Layout>
             <EventCalendar events={events}/>
