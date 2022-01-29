@@ -9,7 +9,7 @@ export enum AddFormState {
 
 export interface Appointment {
   _id: string;
-  appointmentDate: Date;
+  appointmentDate: string;
   appointmentTime: string;
   toMaster: User;
 }
