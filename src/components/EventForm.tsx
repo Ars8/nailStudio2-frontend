@@ -1,30 +1,24 @@
-import React, {FC, useState} from 'react';
-import {Form, TimePicker} from "antd";
+import React, {FC} from 'react';
+import {Form} from "antd";
 import {IUser} from "../models/IUser";
 import {IEvent} from "../models/IEvent";
-import moment from 'moment';
+import AppointmentHoursItem from './AppointmentHoursItem';
+import { Appointment } from '../store/ducks/events/contracts/state';
 
 interface EventFormProps {
     masters: IUser[],
+    events: Appointment[],
     submit: (event: IEvent) => void
 }
 
-const EventForm: FC<EventFormProps> = (props) => {
-    const [selectedTime, setSelectedTime] = useState("00:00");
+const EventForm: FC<EventFormProps> = ({events}) => {
     return (
         <Form>
-
-            <TimePicker
-                format="HH:mm"
-                minuteStep={60}
-                disabledHours={() => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 19, 20, 21, 22, 23]}
-                showNow={false}
-                value={moment(selectedTime, "HH:mm")}
-                onSelect={(value) => {
-                const timeString = moment(value).format("HH:mm");
-                setSelectedTime(timeString)
-            }} />
-            
+            {events.map((item, index) => (
+                <AppointmentHoursItem key={index}>
+                    <div>{item.appointmentDate}</div>
+                </AppointmentHoursItem>
+            ))}
         </Form>
     );
 };
