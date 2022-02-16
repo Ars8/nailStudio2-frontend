@@ -1,23 +1,21 @@
 import React, {FC} from 'react';
 import {Layout} from "antd";
 import EventCalendar from "../components/EventCalendar/index";
-import { useDispatch, useSelector } from "react-redux";
-import { selectAppointmentsItems } from '../store/ducks/events/selectors';
-import { fetchUserData } from '../store/ducks/user/actionCreators';
+import { useDispatch } from "react-redux";
 import {fetchAppointment} from '../store/ducks/events/actionCreators';
+import { fetchMaster } from '../store/ducks/master/actionCreators';
 
 const Event: FC = () => {
     const dispatch = useDispatch();
-    const events = useSelector(selectAppointmentsItems);
 
     React.useEffect(() => {
-        dispatch(fetchUserData());
+        dispatch(fetchMaster());
         dispatch(fetchAppointment());
       }, [dispatch]);
 
     return (
         <Layout>
-            <EventCalendar events={events}/>
+            <EventCalendar/>
         </Layout>
     );
 };

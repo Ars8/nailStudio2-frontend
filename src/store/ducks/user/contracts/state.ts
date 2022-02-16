@@ -8,6 +8,7 @@ export interface User {
   password: string;
   confirmHash: string;
   confirmed?: boolean;
+  workingHours?: [number];
 }
 
 export interface UserState {

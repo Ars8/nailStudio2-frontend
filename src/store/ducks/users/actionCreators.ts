@@ -1,5 +1,11 @@
 import { LoadingStatus } from "../../types";
-import { FetchUsersActionInterface, SetUsersActionInterface, SetUsersLoadingStatusActionInterface, UsersActionType } from "./contracts/actionTypes";
+import { 
+  FetchUserActionInterface, 
+  FetchUsersActionInterface, 
+  SetUsersActionInterface, 
+  SetUsersLoadingStatusActionInterface, 
+  UsersActionType 
+} from "./contracts/actionTypes";
 import { UsersState } from "./contracts/state";
 
 export const setUsers = (payload: UsersState['items']): SetUsersActionInterface => ({
@@ -9,6 +15,10 @@ export const setUsers = (payload: UsersState['items']): SetUsersActionInterface 
 
 export const fetchUsers = (): FetchUsersActionInterface => ({
   type: UsersActionType.FETCH_USERS,
+})
+
+export const fetchUser = ():FetchUserActionInterface => ({
+  type: UsersActionType.FETCH_USER,
 })
 
 export const setUsersLoadingStatus = (payload: LoadingStatus): SetUsersLoadingStatusActionInterface => ({

@@ -11,4 +11,8 @@ export const UsersApi = {
     const { data } = await axios.get<Response<User[]>>('/masters');
     return data.data;
   },
+  async fetchMaster(userId?: string): Promise<User> {
+    const { data } = await axios.get<Response<User>>(`/masters/${userId}`);
+    return data.data;
+  }
 };
