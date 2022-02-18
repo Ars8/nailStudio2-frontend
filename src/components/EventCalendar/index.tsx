@@ -4,7 +4,6 @@ import { Calendar, Alert, Modal } from "antd";
 import "./EventCalendar.css";
 import EventForm from "../EventForm";
 import { useSelector } from "react-redux";
-import { IEvent } from "../../models/IEvent";
 import { selectMasterItems } from "../../store/ducks/master/selectors";
 import { User } from "../../store/ducks/user/contracts/state";
 import moment from "moment";
@@ -22,19 +21,9 @@ const EventCalendar: FC = () => {
   const master: User | undefined = useSelector(selectMasterItems);
 	const events: Appointment[] = useSelector(selectAppointmentsItems);
 
-	console.log(events);
-
-
-
-	const arrEventsDate = events.map((item) => {
-		const dayOfEvent = new Date(item.appointmentDate).toDateString();
-		return dayOfEvent;
-	});
-
-	const eventState = new Date(state.selectedValue);
-
-	console.log(arrEventsDate);
-	console.log(eventState.toDateString());
+		
+		const eventState = new Date(state.selectedValue);
+		console.log(typeof eventState);
 
 	let arrEvents = [];
 
@@ -44,9 +33,7 @@ const EventCalendar: FC = () => {
 		}
 	}
 
-	console.log(arrEvents)
-
-	const addNewEvent = (event: IEvent) => {
+	const addNewEvent = () => {
 		setModalVisible(false);
 	}
 
@@ -62,7 +49,14 @@ const EventCalendar: FC = () => {
 	};
 
 	const selectedFullDate = moment(state.selectedValue).format('DD.MM.YYYY');
-	console.log(selectedFullDate);	
+
+	const addHour = (hour: number) => {
+		const addAppointmentDate = new Date(eventState.setHours(hour, 0, 0, 0));
+		console.log(typeof addAppointmentDate);
+		addNewEvent();
+		const d = new Date()
+		console.log(typeof d);
+	}
 
 	return (
 		<>
@@ -78,7 +72,7 @@ const EventCalendar: FC = () => {
       >
 				<EventForm
 						arrEvents={arrEvents}
-						submit={addNewEvent}
+						addHour={addHour}
 				/>
       </Modal>
 		</>
