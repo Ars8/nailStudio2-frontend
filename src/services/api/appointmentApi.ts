@@ -13,8 +13,8 @@ export const AppointmentsApi = {
     );
     return data.data;
   },
-  async addAppointment(payload: { author: string; guest: string; date: string; description: string }): Promise<Appointment> {
-    const { data } = await axios.post<Response<Appointment>>('/appointment', payload);
+  async addAppointment(payload: { appointmentDate: Date; toMaster: string | undefined; }): Promise<Appointment> {
+    const { data } = await axios.post<Response<Appointment>>('/masters', payload);
     return data.data;
   },
 };
