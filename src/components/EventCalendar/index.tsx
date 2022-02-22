@@ -82,11 +82,11 @@ const EventCalendar: FC = () => {
 	return (
 		<>
 			<Alert
-						message={`You selected date: ${selectedFullDate}`}
+						message={`Выбранная дата: ${selectedFullDate}`}
 			/>
 			<Calendar	onSelect={onSelect}/>
 			<Modal
-				title={`Дата посещения: ${selectedFullDate} к мастеру ${master?.username}`}
+				title={confirmAppoint && `Дата посещения: ${selectedFullDate} к мастеру ${master?.username}`}
 				visible={modalVisible}
 				footer={null}
 				onCancel={() => setModalVisible(false)}
@@ -98,7 +98,7 @@ const EventCalendar: FC = () => {
 						addHour={addHour}
 				/>
 				: 
-				<Card title="cart title" >
+				<Card className="modalCard">
 					<p>Дата Вашего посещения: {selectedFullDate}</p>
 					<p>Время Вашего посещения: {selectedHour}:00</p>
 					<p>К мастеру: {master?.username}</p>
