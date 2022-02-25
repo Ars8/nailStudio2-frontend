@@ -14,7 +14,7 @@ export const appointmentsReducer = produce((draft: Draft<AppointmentsState>, act
   switch (action.type) {
     case AppointmentsActionsType.FETCH_APPOINTMENTS:
       draft.items = [];
-      draft.LoadingStatus = LoadingStatus.LOADED;
+      draft.LoadingStatus = LoadingStatus.LOADING;
       break;
 
     case AppointmentsActionsType.SET_APPOINTMENTS:

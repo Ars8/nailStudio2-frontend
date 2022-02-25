@@ -20,3 +20,7 @@
 .modalCard {
   margin-top: 30px;
 }
+
+.modalCard__button {
+  margin-left: 20px;
+}

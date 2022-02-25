@@ -14,8 +14,6 @@ const NailsMasters: React.FC = () => {
 		dispatch(fetchUsers());
 	}, [dispatch]);
 
-	console.log(masters);
-
 	return (
 		<div className="container">
 			<div className="content__items">
