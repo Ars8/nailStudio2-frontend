@@ -1,18 +1,22 @@
-import React from 'react';
-import { Button, Row } from 'antd';
-import { useHistory } from 'react-router-dom';
+import React from "react";
+import { Layout, Row } from "antd";
 
 const Home = (): React.ReactElement => {
-  const history = useHistory();
+	return (
+		<Layout.Content
+			className="site-layout"
+			style={{ padding: "0 50px", marginTop: 64 }}
+		>
+			<Row justify="center" align="middle" className="h100">
+				<div
+					className="site-layout-background"
+					style={{ padding: 24, minHeight: 380 }}
+				>
+					Content
+				</div>
+			</Row>
+		</Layout.Content>
+	);
+};
 
-  const handleGoAppointment = (): void => {
-    history.push('/nailsmasters');
-  }
-  return (
-    <Row justify="center" align="middle" className="h100">
-      <Button type="primary" onClick={handleGoAppointment}>Записаться на маникюр</Button>      
-    </Row>
-  )
-}
-
-export default Home
+export default Home;

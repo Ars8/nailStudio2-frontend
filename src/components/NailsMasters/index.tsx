@@ -16,11 +16,11 @@ const NailsMasters: React.FC = () => {
 
 	return (
 		<div className="container">
-			<div className="content__items">
 				{masters.map((master) => (
+					<div style={{ maxWidth: "250px", margin: "25px" }}>
 						<NailMaster key={master._id} fullname={master.fullname} id={master._id}/>
+					</div>
 				))}
-			</div>
 		</div>
 	);
 };
