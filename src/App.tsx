@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Route, Switch, useHistory } from 'react-router-dom';
-import Navbar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 import {Layout} from "antd";
 import { fetchUserData } from './store/ducks/user/actionCreators';
 import { selectIsAuth, selectUserStatus } from './store/ducks/user/selectors';
@@ -36,7 +36,7 @@ const App:FC = () => {
       <Switch> 
         <>
           <Layout>        
-              <Navbar/>              
+              <NavBar/>              
               <Layout.Content>
                 <Route path="/signin" component={Login} exact />
                 <Route path="/home" component={Home} />
