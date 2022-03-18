@@ -13,6 +13,7 @@ import Event from './pages/Event';
 import NailsMasters from './components/NailsMasters';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
+import AboutUs from './pages/AboutUs';
 
 const App:FC = () => {
   const history = useHistory();
@@ -40,6 +41,7 @@ const App:FC = () => {
               <Layout.Content>
                 <Route path="/signin" component={Login} exact />
                 <Route path="/home" component={Home} />
+                <Route path="/aboutus" component={AboutUs} />
                 <Route path="/portfolio" component={Portfolio} />                
                 <Route path="/masters/appointment/:id" component={Event} />
                 <Route path="/nailsmasters" component={NailsMasters} />

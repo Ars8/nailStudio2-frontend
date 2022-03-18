@@ -14,47 +14,61 @@ const NavBar: FC = () => {
     window.localStorage.removeItem('token');
     dispatch(signOut());
   };
-	const handleGoAppointment = (): void => {
-    history.push('/nailsmasters');
+  const handleGoTo = (path: string): void => {
+    history.push(`${path}`);
   }
-	const handleGoAboutUs = (): void => {
-    history.push('/home');
-  }
-	const handleGoPortfolio = (): void => {
-    history.push('/portfolio');
-  }
+  const { Header } = Layout;
 	return (
-		<Layout.Header>
-			<Row justify="end">
-				{isAuth ? (
-					<>
-						<div style={{ color: "white" }}>{userData ? userData.username : 'User'}</div>
-						<Menu theme="dark" mode="horizontal" selectable={false}>
-							<Menu.Item onClick={handleSignOut} key={1}>
-								Logout
-							</Menu.Item>
-						</Menu>
-					</>
-				) 
-				:
-				(
-					<>
-						<Menu theme="dark" mode="horizontal" selectable={false} forceSubMenuRender={false}>
-							<Menu.Item onClick={handleGoAboutUs}  key="1">
-								О нас
-							</Menu.Item>
-							<Menu.Item onClick={handleGoAppointment} key="2">
-								Запись
-							</Menu.Item>
-							<Menu.Item onClick={handleGoPortfolio} key="3">
-								Работы мастеров
-							</Menu.Item>
-						</Menu>
-					</>
-				
-				)}
-			</Row>
-		</Layout.Header>
+		<Layout>
+			<Header>
+				<Row justify="end">
+					{isAuth ? (
+						<>
+							<div style={{ color: "white" }}>{userData ? userData.username : 'User'}</div>
+							<Menu theme="dark" mode="horizontal" selectable={false}>
+								<Menu.Item onClick={handleSignOut} key={1}>
+									Logout
+								</Menu.Item>
+							</Menu>
+						</>
+					) 
+					:
+					(
+						<>
+							<Menu theme="dark" mode="horizontal" selectable={true} forceSubMenuRender={false}>
+								<Menu.Item onClick={() => handleGoTo('/aboutus')}  key="1">
+									О нас
+								</Menu.Item>
+								<Menu.Item onClick={() => handleGoTo('/home')}  key="2">
+									Наша команда
+								</Menu.Item>
+								<Menu.Item onClick={() => handleGoTo('/home')}  key="3">
+									Отзывы
+								</Menu.Item>
+								<Menu.Item onClick={() => handleGoTo('/home')}  key="4">
+									Вакансии
+								</Menu.Item>
+								<Menu.Item onClick={() => handleGoTo('/home')}  key="5">
+									Цены
+								</Menu.Item>
+								<Menu.Item onClick={() => handleGoTo('/home')}  key="6">
+									Акции
+								</Menu.Item>
+								<Menu.Item onClick={() => handleGoTo('/nailsmasters')} key="7">
+									Запись
+								</Menu.Item>
+								<Menu.Item onClick={() => handleGoTo('/portfolio')} key="8">
+									Работы мастеров
+								</Menu.Item>
+								<Menu.Item onClick={() => handleGoTo('/home')}  key="9">
+									Контакты
+								</Menu.Item>
+							</Menu>
+						</>
+					)}
+				</Row>
+			</Header>
+		</Layout>
 	);
 };
 
