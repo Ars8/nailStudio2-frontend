@@ -1,5 +1,5 @@
 import { call, put, takeLatest } from "redux-saga/effects";
-import { UsersApi } from "../../../services/api/usersApi";
+import {UsersApi} from "../../../services/api/usersApi";
 import { LoadingStatus } from "../../types";
 import { setMaster, setMasterLoadingStatus } from "./actionCreators";
 import { MasterActionType } from "./contracts/actionTypes";

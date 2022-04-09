@@ -9,6 +9,7 @@ import "./NailsMasters.css";
 const NailsMasters: React.FC = () => {
 	const dispatch = useDispatch();
 	const masters = useSelector(selectUsersItems);
+	console.log(masters)
 
 	React.useEffect(() => {
 		dispatch(fetchUsers());
