@@ -10,8 +10,8 @@ export const UsersApi = {
   async fetchUsers() {
     try {
       const response = await axios.get('./users.json');
-      console.log(response);
-      return response;
+      const data = response.data;
+      return data;
     } catch (error) {
       console.error(error);
     }
