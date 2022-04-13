@@ -1,0 +1,11 @@
+.ourTeamCard__content {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+    }
+
+.ourTeamCard__item {
+     margin: 20px;
+}

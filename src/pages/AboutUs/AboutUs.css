@@ -4,6 +4,6 @@
     align-items: center;
     justify-content: center;
     width: 1120px;
-    height: calc(100vh - 64px);
+    height: auto;
     margin: 0 auto;
 }

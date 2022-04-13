@@ -39,7 +39,7 @@ const NavBar: FC = () => {
 								<Menu.Item onClick={() => handleGoTo('/aboutus')}  key="1">
 									О нас
 								</Menu.Item>
-								<Menu.Item onClick={() => handleGoTo('/home')}  key="2">
+								<Menu.Item onClick={() => handleGoTo('/ourteam')}  key="2">
 									Наша команда
 								</Menu.Item>
 								<Menu.Item onClick={() => handleGoTo('/home')}  key="3">

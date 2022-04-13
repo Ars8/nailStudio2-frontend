@@ -5,8 +5,9 @@ import { useHistory } from 'react-router-dom';
 
 const { Meta } = Card;
 
-interface NailMasterProp {
+export interface NailMasterProp {
 	fullname: string,
+  email?: string
   id: any,
 }
 

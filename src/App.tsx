@@ -14,6 +14,8 @@ import NailsMasters from './components/NailsMasters';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import AboutUs from './pages/AboutUs';
+import Footer from './components/Footer';
+import OurTeam from './pages/OurTeam';
 
 const App:FC = () => {
   const history = useHistory();
@@ -42,11 +44,13 @@ const App:FC = () => {
                 <Route path="/signin" component={Login} exact />
                 <Route path="/home" component={Home} />
                 <Route path="/aboutus" component={AboutUs} />
+                <Route path="/ourteam" component={OurTeam} />
                 <Route path="/portfolio" component={Portfolio} />                
                 <Route path="/masters/appointment/:id" component={Event} />
                 <Route path="/nailsmasters" component={NailsMasters} />
                 <Route path="/user/activate/:hash" component={ActivatePage} exact />
               </Layout.Content>
+              <Footer/>
           </Layout>
         </>        
       </Switch>
