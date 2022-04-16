@@ -7,7 +7,6 @@ import { fetchUserData } from './store/ducks/user/actionCreators';
 import { selectIsAuth, selectUserStatus } from './store/ducks/user/selectors';
 import { LoadingStatus } from './store/types';
 import ActivatePage from "./pages/ActivatePage";
-import './App.css';
 import Login from './pages/Login';
 import Event from './pages/Event';
 import NailsMasters from './components/NailsMasters';
@@ -16,6 +15,8 @@ import Portfolio from './pages/Portfolio';
 import AboutUs from './pages/AboutUs';
 import Footer from './components/Footer';
 import OurTeam from './pages/OurTeam';
+import Review from './pages/Review';
+import './App.css';
 
 const App:FC = () => {
   const history = useHistory();
@@ -44,6 +45,7 @@ const App:FC = () => {
                 <Route path="/signin" component={Login} exact />
                 <Route path="/home" component={Home} />
                 <Route path="/aboutus" component={AboutUs} />
+                <Route path="/review" component={Review} />
                 <Route path="/ourteam" component={OurTeam} />
                 <Route path="/portfolio" component={Portfolio} />                
                 <Route path="/masters/appointment/:id" component={Event} />

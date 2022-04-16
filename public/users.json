@@ -52,5 +52,59 @@
     "password": "d220c420f617a97315e92e69ceffe92e",
     "confirmHash": "a8af83fab1498c74e13f1d3320dceff6",
     "confirmed": true
+  },
+  {
+    "_id": "61b8aacdfc6e1915bc7747ed",
+    "email": "test@mail.ru",
+    "fullname": "test",
+    "username": "test",        
+    "password": "fa21d5ccbe66c80766caeefb03109b73",
+    "confirmHash": "0563a371051a4b1f966c682bb1abf868",
+    "confirmed": false
+  },
+  {
+    "_id": "61b8aacdfc6e1915bc7747ee",
+    "email": "test1@mail.ru",
+    "fullname": "test1",
+    "username": "test1",        
+    "password": "fa21d5ccbe66c80766caeefb03109b77",
+    "confirmHash": "0563a371051a4b1f966c682bb1abf864",
+    "confirmed": false
+  },
+  {
+    "_id": "61b8aacdfc6e1915bc7747ef",
+    "email": "test2@mail.ru",
+    "fullname": "test2",
+    "username": "test2",        
+    "password": "fa21d5ccbe66c80766caeefb03109b78",
+    "confirmHash": "0563a371051a4b1f966c682bb1abf861",
+    "confirmed": false
+  },
+  {
+    "_id": "61b8aacdfc6e1915bc7747eg",
+    "email": "test3@mail.ru",
+    "fullname": "test3",
+    "username": "test3",        
+    "password": "fa21d5ccbe66c80766caeefb03109b72",
+    "confirmHash": "0563a371051a4b1f966c682bb1abf863",
+    "confirmed": false
+  },
+  {
+    "_id": "61b8aaf3fc6e1915bc7747ef",        
+    "email": "Igor@mail.ru",
+    "fullname": "Igor",
+    "username": "Igor",        
+    "password": "ef814d1d69f6e5048579ac60ad03f744",
+    "confirmHash": "e9ac560b1d9acfb7a0b6f355e8368100",
+    "confirmed": false
+  },
+  {
+    "_id": "61b9f77c69e2503d0cd3cce7",        
+    "email": "fransuazakubov@mail.ru",
+    "fullname": "fransuazakubov",
+    "username": "fransua",        
+    "password": "d220c420f617a97315e92e69ceffe92e",
+    "confirmHash": "a8af83fab1498c74e13f1d3320dceff6",
+    "confirmed": true
   }
 ]

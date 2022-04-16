@@ -19,8 +19,8 @@ const OurTeam: React.FC = () => {
   return (
     <div className="container">
       {masters.map((master) => (
-        <div>
-          <OurTeamCard key={master._id} fullname={master.fullname} id={master._id}/>
+        <div className="ourteam__card">
+          <OurTeamCard key={master._id} fullname={master.fullname} email={master.email} id={master._id}/>
         </div>
       ))}
         
