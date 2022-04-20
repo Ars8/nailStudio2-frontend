@@ -16,6 +16,10 @@ import AboutUs from './pages/AboutUs';
 import Footer from './components/Footer';
 import OurTeam from './pages/OurTeam';
 import Review from './pages/Review';
+import Vacancy from './pages/Vacancy';
+import Price from './pages/Price';
+import Sales from './pages/Sales';
+import Contact from './pages/Contact';
 import './App.css';
 
 const App:FC = () => {
@@ -45,9 +49,13 @@ const App:FC = () => {
                 <Route path="/signin" component={Login} exact />
                 <Route path="/home" component={Home} />
                 <Route path="/aboutus" component={AboutUs} />
-                <Route path="/review" component={Review} />
                 <Route path="/ourteam" component={OurTeam} />
+                <Route path="/review" component={Review} />
+                <Route path="/vacancy" component={Vacancy} />
+                <Route path="/price" component={Price} />
+                <Route path="/sales" component={Sales} />
                 <Route path="/portfolio" component={Portfolio} />                
+                <Route path="/contact" component={Contact} />                
                 <Route path="/masters/appointment/:id" component={Event} />
                 <Route path="/nailsmasters" component={NailsMasters} />
                 <Route path="/user/activate/:hash" component={ActivatePage} exact />
