@@ -2,8 +2,10 @@
   {
     "_id": "61b8aacdfc6e1915bc7747ed",
     "email": "test@mail.ru",
-    "fullname": "test",
-    "username": "test",        
+    "fullname": "Новикова Евангелина",
+    "username": "test",
+    "position": "администратор",
+    "img": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Z2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     "password": "fa21d5ccbe66c80766caeefb03109b73",
     "confirmHash": "0563a371051a4b1f966c682bb1abf868",
     "confirmed": false
@@ -11,8 +13,10 @@
   {
     "_id": "61b8aacdfc6e1915bc7747ee",
     "email": "test1@mail.ru",
-    "fullname": "test1",
-    "username": "test1",        
+    "fullname": "Шишкина Елизавета",
+    "username": "test1",
+    "position": "администратор",
+    "img": "https://images.unsplash.com/photo-1496440737103-cd596325d314?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     "password": "fa21d5ccbe66c80766caeefb03109b77",
     "confirmHash": "0563a371051a4b1f966c682bb1abf864",
     "confirmed": false
@@ -20,8 +24,10 @@
   {
     "_id": "61b8aacdfc6e1915bc7747ef",
     "email": "test2@mail.ru",
-    "fullname": "test2",
-    "username": "test2",        
+    "fullname": "Романова Варвара",
+    "username": "test2",
+    "position": "младший администратор",
+    "img": "https://images.unsplash.com/photo-1514315384763-ba401779410f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",        
     "password": "fa21d5ccbe66c80766caeefb03109b78",
     "confirmHash": "0563a371051a4b1f966c682bb1abf861",
     "confirmed": false
@@ -29,8 +35,10 @@
   {
     "_id": "61b8aacdfc6e1915bc7747eg",
     "email": "test3@mail.ru",
-    "fullname": "test3",
-    "username": "test3",        
+    "fullname": "Евсеева Ольга",
+    "username": "test3",
+    "position": "директор сети",
+    "img": "https://images.unsplash.com/photo-1604004555489-723a93d6ce74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Z2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",        
     "password": "fa21d5ccbe66c80766caeefb03109b72",
     "confirmHash": "0563a371051a4b1f966c682bb1abf863",
     "confirmed": false
@@ -38,8 +46,10 @@
   {
     "_id": "61b8aaf3fc6e1915bc7747ef",        
     "email": "Igor@mail.ru",
-    "fullname": "Igor",
-    "username": "Igor",        
+    "fullname": "Симонова Александра",
+    "username": "Igor",
+    "position": "управляющий",
+    "img": "https://images.unsplash.com/photo-1599842057874-37393e9342df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",        
     "password": "ef814d1d69f6e5048579ac60ad03f744",
     "confirmHash": "e9ac560b1d9acfb7a0b6f355e8368100",
     "confirmed": false
@@ -47,8 +57,10 @@
   {
     "_id": "61b9f77c69e2503d0cd3cce7",        
     "email": "fransuazakubov@mail.ru",
-    "fullname": "fransuazakubov",
-    "username": "fransua",        
+    "fullname": "Жукова Мирослава",
+    "username": "fransua",
+    "position": "мастер ногтевого сервиса",
+    "img": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",        
     "password": "d220c420f617a97315e92e69ceffe92e",
     "confirmHash": "a8af83fab1498c74e13f1d3320dceff6",
     "confirmed": true
@@ -56,8 +68,10 @@
   {
     "_id": "61b8aacdfc6e1915bc7747ed",
     "email": "test@mail.ru",
-    "fullname": "test",
-    "username": "test",        
+    "fullname": "Колосова Анна",
+    "username": "test",
+    "position": "стандарт мастер маникюра",
+    "img": "https://images.unsplash.com/photo-1563306406-e66174fa3787?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGdpcmx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",        
     "password": "fa21d5ccbe66c80766caeefb03109b73",
     "confirmHash": "0563a371051a4b1f966c682bb1abf868",
     "confirmed": false
@@ -65,8 +79,10 @@
   {
     "_id": "61b8aacdfc6e1915bc7747ee",
     "email": "test1@mail.ru",
-    "fullname": "test1",
-    "username": "test1",        
+    "fullname": "Романова Софья",
+    "username": "test1",
+    "position": "стандарт мастер маникюра",
+    "img": "https://images.unsplash.com/photo-1545912452-8aea7e25a3d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGdpcmx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",        
     "password": "fa21d5ccbe66c80766caeefb03109b77",
     "confirmHash": "0563a371051a4b1f966c682bb1abf864",
     "confirmed": false
@@ -74,8 +90,10 @@
   {
     "_id": "61b8aacdfc6e1915bc7747ef",
     "email": "test2@mail.ru",
-    "fullname": "test2",
-    "username": "test2",        
+    "fullname": "Сидорова Анастасия",
+    "username": "test2",
+    "position": "стандарт мастер маникюра",
+    "img": "https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGdpcmx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",        
     "password": "fa21d5ccbe66c80766caeefb03109b78",
     "confirmHash": "0563a371051a4b1f966c682bb1abf861",
     "confirmed": false
@@ -83,8 +101,10 @@
   {
     "_id": "61b8aacdfc6e1915bc7747eg",
     "email": "test3@mail.ru",
-    "fullname": "test3",
-    "username": "test3",        
+    "fullname": "Белова Виктория",
+    "username": "test3",
+    "position": "мастер ногтевого сервиса",
+    "img": "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGdpcmx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",        
     "password": "fa21d5ccbe66c80766caeefb03109b72",
     "confirmHash": "0563a371051a4b1f966c682bb1abf863",
     "confirmed": false
@@ -92,8 +112,10 @@
   {
     "_id": "61b8aaf3fc6e1915bc7747ef",        
     "email": "Igor@mail.ru",
-    "fullname": "Igor",
-    "username": "Igor",        
+    "fullname": "Толкачева Александра",
+    "username": "Igor",
+    "position": "мастер ногтевого сервиса",
+    "img": "https://images.unsplash.com/flagged/photo-1559502867-c406bd78ff24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGdpcmx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",        
     "password": "ef814d1d69f6e5048579ac60ad03f744",
     "confirmHash": "e9ac560b1d9acfb7a0b6f355e8368100",
     "confirmed": false
@@ -101,8 +123,10 @@
   {
     "_id": "61b9f77c69e2503d0cd3cce7",        
     "email": "fransuazakubov@mail.ru",
-    "fullname": "fransuazakubov",
-    "username": "fransua",        
+    "fullname": "Зайцева Анна",
+    "username": "fransua",
+    "position": "мастер ногтевого сервиса",
+    "img": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",        
     "password": "d220c420f617a97315e92e69ceffe92e",
     "confirmHash": "a8af83fab1498c74e13f1d3320dceff6",
     "confirmed": true

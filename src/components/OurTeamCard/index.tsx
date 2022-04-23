@@ -6,7 +6,7 @@ import './OurTeamCard.css'
 
 const { Meta } = Card;
 
-const OurTeamCard: React.FC<NailMasterProp> = ({fullname, email, id}:NailMasterProp):React.ReactElement => {
+const OurTeamCard: React.FC<NailMasterProp> = ({fullname, email, img, position, id}:NailMasterProp):React.ReactElement => {
     
   return (
     <div className="ourTeamCard__content">
@@ -14,9 +14,9 @@ const OurTeamCard: React.FC<NailMasterProp> = ({fullname, email, id}:NailMasterP
             className="ourTeamCard__item"
             hoverable
             style={{ width: 240 }}
-            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+            cover={<img alt="example" src={img} />}
         >
-            <Meta title={fullname} description={email} />
+            <Meta title={fullname} description={position} />
         </Card>     
     </div>
   )

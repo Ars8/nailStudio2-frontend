@@ -5,6 +5,8 @@ export interface User {
   email: string;
   fullname: string;
   username: string;
+  img?: string;
+  position?: string;
   password: string;
   confirmHash: string;
   confirmed?: boolean;

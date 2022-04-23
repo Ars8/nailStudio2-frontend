@@ -1,11 +1,17 @@
 import React, { createElement, useState } from 'react';
 import { Comment, Tooltip, Avatar } from 'antd';
-import moment from 'moment';
 import { DislikeOutlined, LikeOutlined, DislikeFilled, LikeFilled } from '@ant-design/icons';
 
 import './comments.css'
 
-const Comments = () => {
+interface CommentProp {
+  author: string;
+  review: string;
+  date: string;
+  avatar: string;
+}
+
+const Comments: React.FC<CommentProp> = ({ author, review, date, avatar}) => {
   const [likes, setLikes] = useState(0);
   const [dislikes, setDislikes] = useState(0);
   const [action, setAction] = useState('');
@@ -41,18 +47,16 @@ const Comments = () => {
   return (
     <Comment
       actions={actions}
-      author={<a>Han Solo</a>}
-      avatar={<Avatar src="https://joeschmoe.io/api/v1/random" alt="Han Solo" />}
-      content={
+      author={author}
+      avatar={<Avatar src={avatar} alt={author} />}
+      content={`
         <p>
-          We supply a series of design principles, practical patterns and high quality design
-          resources (Sketch and Axure), to help people create their product prototypes beautifully
-          and efficiently.
-        </p>
+          ${review}
+        </p>`
       }
       datetime={
-        <Tooltip title={moment().format('YYYY-MM-DD HH:mm:ss')}>
-          <span>{moment().fromNow()}</span>
+        <Tooltip title={date}>
+          <span>{date}</span>
         </Tooltip>
       }
     />

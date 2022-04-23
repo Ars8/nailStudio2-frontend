@@ -7,7 +7,9 @@ const { Meta } = Card;
 
 export interface NailMasterProp {
 	fullname: string,
-  email?: string
+  email?: string,
+  img?: string,
+  position?: string;
   id: any,
 }
 
