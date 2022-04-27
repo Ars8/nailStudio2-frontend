@@ -1,0 +1,331 @@
+[
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Маникюр",
+        "description": "Маникюр классический/аппаратный/комбинированный/европейский",
+        "cost": "600",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Маникюр",
+        "description": "Маникюр мужской",
+        "cost": "800",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Маникюр",
+        "description": "Придание формы (без маникюра)",
+        "cost": "200",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Маникюр",
+        "description": "Топ-мастер",
+        "cost": "+150",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Педикюр",
+        "description": "Экспресс педикюр \"Пальчики\"",
+        "cost": "900",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Педикюр",
+        "description": "SMART - педикюр",
+        "cost": "1400",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Педикюр",
+        "description": "Педикюр классический/аппаратный/комбинированный",
+        "cost": "1200",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Педикюр",
+        "description": "Педикюр мужской",
+        "cost": "2000",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Педикюр",
+        "description": "Топ-мастер",
+        "cost": "+150",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Покрытие",
+        "description": "Покрытие гель-лаком (Cosmo, TNL, Vogue)",
+        "cost": "800",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Покрытие",
+        "description": "Покрытие гелем Luxio",
+        "cost": "1000",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Покрытие",
+        "description": "Покрытие лаком (обычным, Venylux, лечебным)",
+        "cost": "400",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Покрытие",
+        "description": "Топ-мастер",
+        "cost": "+150",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Дизайн простой",
+        "cost": "100",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Дизайн сложный",
+        "cost": "200",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Художественная роспись",
+        "cost": "300",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Слайдер",
+        "cost": "100",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Стемпинг",
+        "cost": "100",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Фольга",
+        "cost": "100",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Глиттер/Глиттер Luxio",
+        "cost": "100/150",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Растяжка глиттером Vogue/Luxio",
+        "cost": "60/100",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Мерцающий топ Cosmo/Luxio",
+        "cost": "20/30",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Матовый топ",
+        "cost": "20",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Френч",
+        "cost": "50",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Лунный дизайн, обратный френч, раффиан",
+        "cost": "50",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Градиент/ омбре",
+        "cost": "100",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Втирка/зеркальный блеск",
+        "cost": "60",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дизайн (за 1 ноготь)",
+        "description": "Стразы (1 шт.)",
+        "cost": "20",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Наращивание ногтей",
+        "description": "Наращивание ногтей гелем (моделирование формы, маникюр, покрытие) в зависимости от длины",
+        "cost": "3000-4000",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Наращивание ногтей",
+        "description": "Коррекция геля нашего салона (снятие, маникюр, моделирование)",
+        "cost": "1800",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Наращивание ногтей",
+        "description": "Коррекция геля другого салона (снятие, маникюр, моделирование)",
+        "cost": "2000",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Укрепление и SPA-уход",
+        "description": "Маникюр бразильский",
+        "cost": "800",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Укрепление и SPA-уход",
+        "description": "Педикюр бразильский",
+        "cost": "1500",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Укрепление и SPA-уход",
+        "description": "Выравнивание ногтевой пластины",
+        "cost": "300",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Укрепление и SPA-уход",
+        "description": "Укрепление ногтевой пластины гелем/акриловой пудрой",
+        "cost": "600",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Укрепление и SPA-уход",
+        "description": "Укрепление/восстановление ногтей IBX",
+        "cost": "500",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Укрепление и SPA-уход",
+        "description": "Укрепление ногтей VitaGel",
+        "cost": "500",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Укрепление и SPA-уход",
+        "description": "Пилинг рук/ног",
+        "cost": "300",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Укрепление и SPA-уход",
+        "description": "Парафинотерапия холодная/горячая",
+        "cost": "300",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дополнительные услуги",
+        "description": "Снятие обычного лака",
+        "cost": "100",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дополнительные услуги",
+        "description": "Снятие гель-лака",
+        "cost": "250",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дополнительные услуги",
+        "description": "Снятие гель-лака (без последующего маникюра и покрытия)",
+        "cost": "400",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дополнительные услуги",
+        "description": "Снятие наращенных ногтей/укрепления гелем",
+        "cost": "500",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дополнительные услуги",
+        "description": "Донаращивание длины (1 ноготь)",
+        "cost": "250",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дополнительные услуги",
+        "description": "Ремонт (1 ноготь)",
+        "cost": "200",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дополнительные услуги",
+        "description": "Изменение формы",
+        "cost": "200",
+        "currency": "руб"
+    },
+    {
+        "_id": "61b8aacdfc6e1915bc7747ed",
+        "category": "Дополнительные услуги",
+        "description": "Услуга \"в 4 руки\"",
+        "cost": "+500",
+        "currency": "руб"
+    }
+]

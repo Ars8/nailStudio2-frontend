@@ -5,8 +5,8 @@
 	margin: 0 auto;
 	padding: 25px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: start;
+	align-items: flex-start;
 	flex-direction: column;
 	flex-wrap: wrap;
 }

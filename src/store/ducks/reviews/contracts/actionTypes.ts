@@ -3,9 +3,9 @@ import { LoadingStatus } from '../../../types';
 import { ReviewsState } from './state';
 
 export enum ReviewsActionType {
-  FETCH_REVIEWS = 'users/FETCH_USERS',
-  SET_REVIEWS = 'users/SET_USERS',
-  SET_LOADING_STATE = 'users/SET_LOADING_STATE',
+  FETCH_REVIEWS = 'reviews/FETCH_REVIEWS',
+  SET_REVIEWS = 'reviews/SET_REVIEWS',
+  SET_LOADING_STATE = 'reviews/SET_LOADING_STATE',
 }
 
 export interface FetchReviewsActionInterface extends Action<ReviewsActionType> {

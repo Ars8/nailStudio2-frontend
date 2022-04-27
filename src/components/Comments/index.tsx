@@ -49,11 +49,7 @@ const Comments: React.FC<CommentProp> = ({ author, review, date, avatar}) => {
       actions={actions}
       author={author}
       avatar={<Avatar src={avatar} alt={author} />}
-      content={`
-        <p>
-          ${review}
-        </p>`
-      }
+      content={review}
       datetime={
         <Tooltip title={date}>
           <span>{date}</span>
