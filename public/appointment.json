@@ -1,24 +1,22 @@
-{
-    "appointment": [
-        {
-            "_id": "62511ef9d42ba55c42bf6ccd",
-            "appointmentDate": "2022-02-23T11:00:00.000+00:00",
-            "user": "61b9f77c69e2503d0cd3cce7"
-        },
-        {
-            "_id": "62511f76d42ba55c42bf6cce",
-            "appointmentDate": "2022-02-12T08:00:00.000+00:00",
-            "user": "61b9f77c69e2503d0cd3cce7"
-        },
-        {
-            "_id": "62511f87d42ba55c42bf6ccf",
-            "appointmentDate": "2022-02-12T14:00:00.000+00:00",
-            "user": "61b9f77c69e2503d0cd3cce7"
-        },
-        {
-            "_id": "62511fe6d42ba55c42bf6cd0",
-            "appointmentDate": "2022-02-25T14:00:00.000+00:00",
-            "user": "61b9f77c69e2503d0cd3cce7"
-        }
-    ]
-}
+[
+    {
+        "_id": "62511ef9d42ba55c42bf6ccd",
+        "appointmentDate": "2022-02-23T11:00:00.000+00:00",
+        "user": "61b9f77c69e2503d0cd3cce7"
+    },
+    {
+        "_id": "62511f76d42ba55c42bf6cce",
+        "appointmentDate": "2022-02-12T08:00:00.000+00:00",
+        "user": "61b9f77c69e2503d0cd3cce7"
+    },
+    {
+        "_id": "62511f87d42ba55c42bf6ccf",
+        "appointmentDate": "2022-02-12T14:00:00.000+00:00",
+        "user": "61b9f77c69e2503d0cd3cce7"
+    },
+    {
+        "_id": "62511fe6d42ba55c42bf6cd0",
+        "appointmentDate": "2022-02-25T14:00:00.000+00:00",
+        "user": "61b9f77c69e2503d0cd3cce7"
+    }
+]

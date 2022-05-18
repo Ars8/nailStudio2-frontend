@@ -11,7 +11,7 @@ const Home: React.FC = () => {
 			<Row justify="center" align="middle" className="h100">
 				<div
 					className="site-layout-background"
-					style={{ padding: 24, minHeight: 380 }}
+					style={{ padding: 24, minHeight: '100vh' }}
 				>
 					Content
 				</div>
