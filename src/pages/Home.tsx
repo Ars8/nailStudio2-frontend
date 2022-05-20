@@ -13,7 +13,7 @@ const Home: React.FC = () => {
 					className="site-layout-background"
 					style={{ padding: 24, minHeight: '100vh' }}
 				>
-					Content2
+					Content3
 				</div>
 			</Row>
 		</Layout.Content>
